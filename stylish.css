@@ -22,6 +22,10 @@
     color: #d8d8d8 !important;
   }
 
+  body.light_theme {
+    background-color: #2b2b2b !important;
+  }
+
   /***************************
   HEADER
   ****************************/
@@ -93,7 +97,13 @@
   RIGHT
   ****************************/
 
+  .tab_container, div.heading {
+    background-color: #d8d8d8 !important;
+  }
 
+  .flex_content_scroller {
+    background-color: #323232 !important;
+  }
 
   /***************************
   CHAT
@@ -115,16 +125,26 @@
     border-color: #323232 !important;
   }
 
-  a.message_sender.member {
+  a.message_sender.member.member_preview_link {
     color: #cc7832 !important;
   }
 
-  span.message_content {
+  a.timestamp {
+    color: #629755 !important;
+  }
+
+  span.bot_label {
+    background-color: #424445 !important;
+    color: #9876aa !important;
+  }
+
+  span.message_body {
     color: #d8d8d8 !important;
   }
 
-  span.message_content b.mention,
-  span.message_content a.internal_member_link span.mention {
+  div.message_content b.mention,
+  div.message_content a.internal_member_link span.mention,
+  .message.bot_message.show_user.avatar.divider div.message_content span.mention {
     background-color: #323232 !important;
     color: #d25252 !important;
   }
@@ -133,8 +153,17 @@
     background-color: #629755 !important;
   }
 
-  span.message_content div.inline_attachment {
+  div.inline_attachment div.message_content {
     background-color: #323232 !important;
+  }
+
+  ts-message:hover {
+    background-color: #323232 !important;
+  }
+
+  figure.msg_inline_img.msg_inline_child {
+    outline:: none !important;
+    margin: 0 !important;
   }
 
   span.emoji_rxn.emoji_rxn_real {
@@ -164,6 +193,32 @@
     margin-top: 3px !important;
     color: #d25252 !important;
     background-color: #2b2b2b !important;
+  }
+
+  /***************************
+  POPUP
+  ****************************/
+
+  div.action_hover_container {
+    background-color: #323232 !important;
+  }
+
+  a.ts_icon {
+    background-color: #79abff !important;
+  }
+
+  a.ts_icon:hover {
+    color: #ffffff !important;
+  }
+
+  .flexpane_menu_item a {
+    background-color: #323232 !important;
+    color: #d8d8d8 !important;
+  }
+
+  .flexpane_menu_item a:hover {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
   }
 
   /***************************
